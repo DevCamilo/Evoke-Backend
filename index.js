@@ -17,6 +17,7 @@ const GroupsRoutes = require('./routes/GroupsRoutes');
 const CalificationRoutes = require('./routes/CalificationRoutes');
 const DonorRoutes = require('./routes/DonorRoutes');
 const DonationRoutes = require('./routes/DonationRouter');
+const EvocoinsRoutes = require('./routes/EvocoinsRouter');
 
 mongoose.connect(`mongodb://${DB.host}:${DB.port}/${DB.database}`, { useNewUrlParser: true }, (err, con) => {
     if (err) {
@@ -40,6 +41,7 @@ app.use(GroupsRoutes);
 app.use(CalificationRoutes);
 app.use(DonorRoutes);
 app.use(DonationRoutes);
+app.use(EvocoinsRoutes);
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server Corriendo");
