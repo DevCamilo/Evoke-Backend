@@ -1,0 +1,32 @@
+{
+  "name": "evoke-backend",
+  "version": "1.0.0",
+  "description": "Backend para hackaton Evoke 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevCamilo/Evoke-Backend.git"
+  },
+  "keywords": [
+    "Evoke"
+  ],
+  "author": "Camilo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevCamilo/Evoke-Backend/issues"
+  },
+  "homepage": "https://github.com/DevCamilo/Evoke-Backend#readme",
+  "dependencies": {
+    "celebrate": "^10.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.24.0",
+    "mongoose": "^5.6.11",
+    "nodemon": "^1.19.2"
+  }
+}
